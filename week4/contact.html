@@ -53,10 +53,66 @@
                 </tr>
             </tbody>
         </table>
+
+        <section>
+            <!-- Adding a form -->
+            <h3>We love to hear from you!</h3>
+            <form action="thanks.html" method="GET">
+                <div>
+                    <!-- for, id and name should always be same -->
+                    <!-- id and name value should always be unique to avoid ambiguity -->
+                    <!-- placeholder is the value that sits in the text field and vanishes when typed in -->
+                    <!-- Value is the pre added input that can be edited, i.e. some text in the text field already exists -->
+                    <label for="fullname">Your Name: </label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your Name" value="Mr." required>
+                </div>
+                <div>
+                    <label for="youremail">Email: </label>
+                    <input type="email" id="youremail" name="youremail" placeholder="Your email" required>
+                </div>   
+                <div>
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Please share your thoughts."></textarea>
+                </div>
+                <div>
+                    <label for="tickets">How many tickets? (sold in pairs)</label>
+                    <input type="number" id="tickets" name="tickets" min="2" max="10" step="2">
+                </div>
+                <div>
+                    <label for="row">Select Row</label>
+                    <select id="row" name="row" required>
+                        <!-- first option is empty to the user has to fill in this field before continuing -->
+                        <option value="">Select One</option>
+                        <option value="front">Front Row</option>
+                        <option value="center">Center Row</option>
+                        <option value="back">Back Row</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- Same value in 'name' field enables the single selection, i.e. only one radio button is selectable -->
+                    <h3>Have you been here before?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="past">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="past">
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div> 
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" id="policies" name="policies" required>
+                    <label for="policies">I agree to the Terms &amp; Policies</label>
+                    <input type="checkbox" id="emailnotifications" name="emailnotifications">
+                    <label for="emailnotifications">I agree to receive promotional emails.</label>
+                </div>
+        </form>
+        </section>
     
 </main>
     <!-- Footer of the page -->
     <footer>
+        <br>
         <hr>
         Copyright &copy; Nukkad pe Kulhad, 2021
     </footer>
