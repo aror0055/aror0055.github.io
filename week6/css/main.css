@@ -54,8 +54,18 @@ nav ul a:active{
 #teaoftheweek{
 background: orange url(../images/chai_tea_latte.jpg) no-repeat center center;
 background-size: cover;
-color: white;
+color: brown;
+font-size: 1.25rem;
+
+padding: 1em;
+
+/* this is based on vh and vw units */
+/*height: 100vh;*/
+
+/* percentage width is based on the parent */
+width: 50%;
 }
+
 
 /* Selecting elements with class value */
 .orange-link{
