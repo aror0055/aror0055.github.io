@@ -1,40 +1,116 @@
-html{
+html {
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    background: #aad4cf
 }
 
-header{
-    
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-h1{
-    font-size: 3rem;
+body {
+    width: 60%;
+    background: #d4e9e7;
+    background-size: cover;
+    margin: 0 auto;
 }
+
+header {}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    position: relative;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h4{
+ font-size: 1.5rem;
+}
+
 
 .container {
     position: relative;
     text-align: center;
     color: white;
-  }
+}
+
 .center {
     color: white;
     position: absolute;
-    top: 50%;
+    top: 29%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
-  .lone-starfish{
-      height: 25%;
-      width: 25%;
-  }
+img.lone-starfish-wide {
+    width: 100%;
+    height: auto;
+}
 
+img.lone-starfish {
+    width: 20%;
+    padding: 0rem 1rem 1rem 1rem;
+    float: left;
+}
 
- h2{
-      font-size: 2.5rem;
-  }
- h3{
-      font-size: 2rem;
-  }
-  li{
-      font-size: 16px;
-  }
+p{
+    font-size: 1.45rem;
+}
+
+section h3{
+    font-size: 2rem;
+}
+section ul li{
+    font-size: 1.3rem;
+}
+
+nav{
+    display: inline;
+}
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+section.contact {
+    border: 2px solid black;
+    margin: .5rem;
+
+}
+
+.form-attributes{
+    margin: 1rem;
+}
+
+label{
+    font-size: 1.45rem;
+}
+
+.text-field{
+    size: 100%;
+    position: relative;
+    border: none;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.send-button{
+    padding: 1rem;
+    background-color: #d4e9e7;
+}
+
+input.text-field{
+    width: 95%;
+    border: 1px solid black;
+}
+textarea{
+    width: 95%;
+    height: 10rem;
+    border: 1px solid black;
+    resize: none;
+}
