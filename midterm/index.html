@@ -10,32 +10,40 @@
 
 <body>
     <header>
-        <div class="container" index="home">
+        <div class="container" id="home">
             <img class="lone-starfish-wide" src="images/lone-starfish-wide.jpg" alt="Lone Starfish Wide">
         </div>
-        <div class="center">
+        <div style="display: inline;" class="center">
             <h1>
                 Lone Starfish
             </h1>
         </div>
-    </header>
 
-    <main>
         <nav>
             <ul>
                 <li>
                     <h3><a href="#home">HOME</a></h3>
                 </li>
                 <li>
+                    |
+                </li>
+                <li>
                     <h3><a href="#story">STORY</a></h3>
                 </li>
                 <li>
+                    |
+                </li>
+                <li style="width: 50px">
                     <h3><a href="#contact">CONTACT</a></h3>
                 </li>
             </ul>
         </nav>
+    </header>
 
-        <article index="story">
+    <main>
+        
+
+        <article id="story">
             <h2>
                 Life of a starfish
             </h2>
@@ -73,13 +81,13 @@
             </ul>
         </section>
 
-        <section class="contact" index="contact">
-            <div class="form-attributes">
+        <section class="contact" id="contact">
             <h3>
                 Contact to learn more
             </h3>
+            <div class="form-attributes">
 
-            <form action="" method="GET">
+            <form action="index.html" method="GET">
                 <div>
                     <label for="fullname">Your Name </label><br>
                     <input class="text-field" type="text" id="fullname" name="fullname" size="100%">
@@ -90,11 +98,11 @@
                 </div>
                 <div>
                     <label for="message">Your Message </label><br>
-                    <textarea class="text-field" name="message" id="message" size="100%"></textarea>
+                    <textarea class="text-area" name="message" id="message" size="100%"></textarea>
                 
                 </div>
-                <div>
-                    <h4>Would you like to visit the starfish?</h4>
+                <div class="visit-again">
+                    <p>Would you like to visit the starfish?</p>
                     <label for="yes">Yes</label>
                     <input type="radio" id="yes" name="past">
                     <label for="no">No</label>
