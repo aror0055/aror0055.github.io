@@ -1,36 +1,28 @@
 html {
-    box-sizing: border-box;
     font-family: MS Sans Serif, sans-serif;
     background: #aad4cf;
-    margin: -0.2rem;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
+    margin: -0.2em;
 }
 
 body {
     width: 60%;
     background: #d4e9e7;
-    background-size: cover;
     margin: 0 auto;
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 6em;
     font-weight: lighter;
     text-align: center;
     position: relative;
 }
 
-h2{
-    font-size: 2.5rem;
+h2 {
+    font-size: 2.5em;
 }
 
-h4{
- font-size: 1.5rem;
+h4 {
+    font-size: 1.5em;
 }
 
 
@@ -55,29 +47,32 @@ img.lone-starfish-wide {
 
 img.lone-starfish {
     width: 20%;
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 0em 1em 1em 1em;
     float: left;
 }
 
-main{
-    padding: .5rem;
+main {
+    padding: .5em;
 }
 
-p{
-    font-size: 1.45rem;
+p {
+    font-size: 1.45em;
 }
 
-section h3{
-    font-size: 2rem;
-}
-section ul{
-    margin: -1rem;;
-}
-section ul li{
-    font-size: 1.3rem;
+section h3 {
+    font-size: 2em;
 }
 
-nav ul li{
+section ul {
+    margin: -1em;
+    ;
+}
+
+section ul li {
+    font-size: 1.3em;
+}
+
+nav ul li {
     display: inline-block;
     width: 19.5%;
     padding: 1em;
@@ -86,50 +81,51 @@ nav ul li{
     text-align: center;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 div.form-attributes {
     border: 2px solid black;
-    padding: 1rem;
+    padding: 1em;
 
 }
 
-label{
-    font-size: 1.45rem;
+label {
+    font-size: 1.45em;
 }
 
-.text-field{
-    size: 100%;
+.text-field {
     position: relative;
     border: none;
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 1em 0em 1em 0em;
 }
 
-.send-button{
-    padding: 1rem;
+.send-button {
+    padding: 1em;
     background-color: #d4e9e7;
 }
 
-input.text-field{
+input.text-field {
     width: 95%;
     border: 1px solid black;
 }
-textarea.text-area{
+
+textarea.text-area {
     width: 95%;
-    height: 10rem;
+    height: 10em;
     border: 1px solid black;
     resize: none;
 }
 
-div.visit-again p{
-    font-size: 1.75rem;;
+div.visit-again p {
+    font-size: 1.75em;
+    ;
 }
 
-footer{
+footer {
     text-align: right;
-    padding: 2rem;
+    padding: 2em;
 }
