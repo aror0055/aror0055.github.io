@@ -1,0 +1,36 @@
+.largekitten{
+    display: none;
+  }
+  .gameslist li{
+    padding: 10px;
+    border-bottom: solid 1px black;
+  }
+  
+  @media screen and (min-width: 480px){
+    .smallkitten{
+    display: none;
+    }
+    .largekitten{
+      display: inline-block;
+    }
+  }
+  
+  @media screen and (min-width: 800){
+    .gamelist li{
+      padding: 0;
+      float: left;
+      border-right: solid 1px black;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) and (min-width: 900px){
+    h1{
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    h1{
+      font-size: 6rem;
+    }
+  }
