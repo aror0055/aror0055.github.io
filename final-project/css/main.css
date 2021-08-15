@@ -1,0 +1,410 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------
+                                                Custom Styles
+-------------------------------------------------------------------------------------------------- */
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    line-height: 1.5;
+    padding: 3rem;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img{
+    width: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+h2{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+h3{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+h4{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+h5{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+p{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.material-icons{
+font-size: 2rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* color: #c78c06; mustard */
+/* color: #ffe6ac; lightyellow */
+/* color: #222; grey */
+
+/* --------------------------------------------------------------------------------------------------
+                                            Mobile Styles
+---------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:760px){
+/* Header */
+
+header{
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+.logo-banner{
+    background: #c78c06;
+    display: block;
+    box-sizing: border-box;
+    margin: 1rem 1rem 0rem 1rem;
+    margin-top: 1rem;
+}
+
+header .logo{
+height: 10rem;
+width: inherit;
+align-items: left;
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li a{
+    box-sizing: border-box;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: #c78c06;
+    margin: 0rem 1rem;
+}
+
+li a:hover,
+li a:focus{
+color: #222;
+background: #c78c06;
+}
+
+header .search-bar{
+
+}
+
+.search-button{
+    background: #222;
+    border: 1px solid #c78c06;
+    color: #c78c06;
+    padding: 0.5rem;
+}
+
+.search-button:hover,
+.search-button:focus{
+    background: #c78c06;
+    color: #222;
+}
+/* Banner */
+
+#home{
+    background-image: url('../images/main-banner.jpg');
+    padding: 5rem 1rem;
+    background-size: 100% 100%;
+}
+
+.home-div{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    color: white;
+}
+
+.connect-with-us{
+    
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #222;
+    background: #c78c06;
+}
+
+/* About us */
+#about-us{
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+
+/* Services */
+
+/* Digital Transformation */
+.digital-transformation{
+    background-color: #ffe6ac;
+}
+
+.dig-trans-info-div{
+    padding: 1rem;
+}
+
+/* Marketing */
+.marketing{
+    background-color: #ffe6ac;
+    margin-bottom: 1rem;
+}
+
+.marketing-info-div{
+    padding: 1rem;
+}
+
+/* Video Production */
+.vid-production{
+    background-color: #ffe6ac;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.vid-production-info-div{
+    padding: 1rem;
+}
+
+/* Web Development */
+.web-dev{
+    background-color: #ffe6ac;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.web-dev-info-div{
+    padding: 1rem;
+}
+
+/* Print */
+.print{
+    background-color: #ffe6ac;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.print-info-div{
+    padding: 1rem;
+}
+
+
+/* Button */
+.digital-plans,
+.marketing-plans,
+.vid-production-plans,
+.web-dev-plans,
+.print-plans{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    background: #222;
+}
+
+/* Vision */
+
+.vision{
+    background-image: url(../images/vision.jpg);
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1.5rem;
+}
+
+.vision .learn-more{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    background: #000;
+    border: 1px solid #c78c06;
+}
+
+/* Team */
+
+.john-doe{
+    background: #ffe6ac;
+}
+.john-doe-bio{
+    padding: 0rem 1rem 2rem 1rem;;
+}
+
+hr{
+    border: 1px solid #c78c06;
+    color: #ffe6ac;
+}
+
+.bob-rite{
+    background: #ffe6ac;
+}
+.bob-rite-bio{
+    padding: 0rem 1rem 2rem 1rem;;
+}
+
+/* Contact Us Form */
+
+label{
+    font-size: 1rem;
+}
+
+input{
+    width: 90%;
+    padding: 6px 10px;
+  margin: 4px 0;
+}
+
+textarea{
+    padding: 6px 10px;
+  margin: 4px 0;
+    width: 90%;
+    resize: none;
+}
+
+.send{
+    color: #c78c06;
+    font-size: 1.5rem;
+    background: #222;
+    padding: 0.5rem;
+}
+
+/* Hours of operation */
+
+table, th, td {
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+table{
+    width: 100%;
+}
+  th{
+      width: 57%;
+      background: #ffe6ac;
+  }
+  tr{
+      width: 43%;
+  }
+
+/* Location */
+
+iframe{
+    max-width: 1100px;
+    max-height: 700px;
+}
+
+/* Footer */
+footer{
+    padding: 1rem;
+    background: #222;
+}
+
+p.copy{
+    padding-top: 1rem;
+}
+footer p{
+    color: #c78c06;
+    padding: 0.5rem;
+}
+
+footer a:visited{
+    color: #c78c06;
+}
+
+}
+/* --------------------------------------------------------------------------------------------------
+                                            Desktop Styles
+---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:760px){
+
+}
